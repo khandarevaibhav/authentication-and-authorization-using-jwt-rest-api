@@ -26,7 +26,7 @@ app.get("/",(req,resp)=>{
 //mongoose.set('strictQuery', false);
 mongoose.set("strictQuery", true);
 
-mongoose.connect('mongodb+srv://vkpatil22:MongoAtlas2206@cluster0.ydcvsiy.mongodb.net/test?retryWrites=true&w=majority')
+mongoose.connect('mongo-atlas-account')
     .then((resp)=>app.listen(5000,()=>console.log('listening on port 5000 ')))
     .catch((err)=>console.log(err))
 
